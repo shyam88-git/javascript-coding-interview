@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Palindrom</title>
+
+    <script>
+        function isPalindrom(str){
+
+            //Step1:Remove the space and convert the lower case for case insensitive comparison
+
+            let cleanStr=str.replace(/\s/g,"").toLowerCase();
+            
+            //Step2:reverse the string
+
+            const revStr=cleanStr.split("").reverse().join("");
+
+            //Step3:Compared the reverse string with the cleaned original string
+
+             return revStr==cleanStr;
+        }
+
+        console.log(isPalindrom("Shyam Sharki"));
+        console.log(isPalindrom('racecar'));
+        console.log(isPalindrom('A Man a plan a canal Panama'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
