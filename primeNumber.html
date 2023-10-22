@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+
+    <script>
+
+        let number=prompt("Enter the number");
+        if(isNaN(number)){
+
+            alert('Enter digit only');
+        }
+       else if(number==1){
+
+            document.write("The number is neighter a prime number or composit number");
+        }
+        else if(number<=0){
+
+            document.write("the number is not a prime number");
+        }
+        else{
+
+            if(number%2==0){
+
+                document.write("The given number is a composit number");
+            }
+            else 
+            document.write("the given number is a even number");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
