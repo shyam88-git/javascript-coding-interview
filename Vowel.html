@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count vowels</title>
-    <script>
-
-        function countVowels(str){
-
-            let vowels=["a","e","i","o","u"];
-            let count=0;
-
-            //Step1:Iterate through each character in the string
-            for(let char of str.toLowerCase()){
-                //Step2:check if the character is vowel or not
-
-                if(vowels.includes(char)){
-
-                    //Step3:increment the count
-
-                    count++;
-
-
-                }
-
-            }
-            return count;
-        }
-
-        console.log(countVowels("Hello ! World"));
-    </script>
+    <title>Find the longest word in the sentences</title>
 </head>
 <body>
+    <script>
+         function findSecondLargest(arr){
+    let temp;
     
+
+    for(let i=0;i<arr.length;i++){
+
+        for(let j=0;j<arr.length;j++){
+
+            if(arr[j]>arr[j+1]){
+
+                temp=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=temp;
+            }
+
+            
+
+
+        }
+        console.log("The second last element is :"+arr[arr.length-2]);
+   
+
+}
+
+return arr;
+}
+
+findSecondLargest([1,5,6,4,3,8]);
+    </script>
 </body>
 </html>
