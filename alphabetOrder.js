@@ -1,6 +1,6 @@
 function alphabetOrder(str){
 
-    return str.split('').sort().join('');
+    return str.toLowerCase().split('').sort().join('');
 
 
 
