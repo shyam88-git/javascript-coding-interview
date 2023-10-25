@@ -7,16 +7,22 @@
 </head>
 <body>
 
-    <script>
+    
+<script>
+    function revString(str){
 
-        let str="Shyam";
-        let revStr=' ';
-
+        let revStr="";
         for(let i=str.length-1;i>=0;i--){
 
             revStr+=str[i];
+
+
         }
-        document.write(revStr);
+        return revStr;
+
+
+    }
+    console.log(revString("Hello Janjyoti College"));
 
     </script>
     
