@@ -1,19 +1,24 @@
 function findMissingElement(arr){
+    let missingElement=[];
 
     let minElement=Math.min(...arr);
+   
     let maxElement=Math.max(...arr);
-    let missingArray=[];
 
     for(let i=minElement;i<maxElement;i++){
 
-        if(arr.indexOf(i)<0){
+        if(missingElement.indexOf(i)<0){
 
-            missingArray.push(i);
+
+            missingElement.push(i);
+
+            
 
 
         }
     }
-    return missingArray;
-}
+  return missingElement;
 
-console.log(findMissingElement([1,2,4,6]));
+
+}
+console.log(findMissingElement([1,2,4,6,8,10]));
